@@ -21,8 +21,6 @@ for i in range(0,150) : #150개의 데이터 추출
         test_data = np.append(test_data, np.array([iris.data[i]]), axis=0)
         test_data_target = np.append(test_data_target, iris.target[i])
 
-print(type(learn_data_target[3]))
-
 # k = 3인 경우
 iris_3 = KNN_class.KNN(learn_data, learn_data_target, target_names, 3)
 print("data test for k = 3 in Majority vote way>>")
